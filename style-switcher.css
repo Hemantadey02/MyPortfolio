@@ -1,0 +1,87 @@
+.style-switcher {
+    position: fixed;
+    right: -200px;
+    top: 90px;
+    padding: 16px;
+    width: 200px;
+    border: 2px solid var(--second-bg-color);
+    background: var(--third-bg-color);
+    border-radius: 4px;
+    z-index: 10001;
+    transition: all 0.5s ease;
+    color: var(--text-color);
+}
+
+.open {
+    right: 5px;
+}
+
+.style-switcher .s-icon {
+    position: absolute;
+    right: 100%;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    font-size: 24px;
+    text-align: center;
+    border: 2px solid var(--second-bg-color);
+    border-radius: 50%;
+    background: var(--hover-color);
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    color: var(--text-color);
+}
+
+.style-switcher .style-switcher-toggler {
+    top: 2px;
+}
+
+.style-switcher .day-night {
+    top: 58px;
+}
+
+.style-switcher h5 {
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.style-switcher .colors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.style-switcher .colors span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--second-bg-color);
+    border-radius: 50%;
+}
+
+.style-switcher .colors .color-1 {
+    background: #00FFFF;
+}
+
+.style-switcher .colors .color-2 {
+    background: #11ff00;
+}
+
+.style-switcher .colors .color-3 {
+    background: #ff8400;
+}
+
+.style-switcher .colors .color-4 {
+    background: #f021b2;
+}
+
+.style-switcher .colors .color-5 {
+    background: #0051ff;
+}
+
+@media only screen and (max-width:992px) {
+    .style-switcher {
+        top: 20px;
+    }
+}
